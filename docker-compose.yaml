@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  gitlint-dev:
+    container_name: "gitlint-dev"
+    build: 
+        context: docker/gitlint
+        dockerfile: Dockerfile
+    volumes:
+      - "./:/git:delegated"
